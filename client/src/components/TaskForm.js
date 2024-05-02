@@ -20,7 +20,7 @@ const axiosInstance = createAxiosInstance();
      alert('data updated successfully!')
     }
     else{
-    response = await axios.post(`tasks/`, { title, description, deadline, status });
+    response = await axiosInstance.post(`tasks/`, { title, description, deadline, status });
     alert('data added successfully!')
       
   }
